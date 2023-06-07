@@ -17,5 +17,10 @@ namespace Newspaper
         {
             optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=samjoeben3;Database=Newspaper");
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Issue>().Navigation(e => e.Articles).AutoInclude();
+            modelBuilder.Entity<Reporter>().Navigation(e => e.Articles).AutoInclude();
+        }
     }
 }
