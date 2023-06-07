@@ -11,6 +11,6 @@ namespace Newspaper
         public string Name;
         public string Speciality;
         public List<Article> Articles; // Place holder string untill article class is made
-
+        public Issue Issue; 
     }
 }
