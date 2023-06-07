@@ -8,9 +8,10 @@ namespace Newspaper
 {
     public class Article
     {
-        public string Title;
-        public string Content;
-        public Reporter Reporter;
-        public string issue;
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public Reporter Reporter { get; set; }
+        public Issue issue { get; set; }
     }
 }

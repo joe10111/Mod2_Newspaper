@@ -8,7 +8,8 @@ namespace Newspaper
 {
     public class Issue
     {
-        public DateTime Date;
-        public List<Article> Articles; 
+        public int Id { get; set; }
+        public DateTime Date { get; set; }
+        public List<Article> Articles { get; set; }
     }
 }
