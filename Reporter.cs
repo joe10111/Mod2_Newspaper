@@ -10,7 +10,7 @@ namespace Newspaper
     {
         public string Name;
         public string Speciality;
-        public string Articles; // Place holder string untill article class is made
+        public List<Article> Articles; // Place holder string untill article class is made
 
     }
 }
